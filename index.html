@@ -194,7 +194,7 @@
 
 <div class="cube-excerpt" id="cube-excerpt-数据通信基础">
     <header class="cube-excerpt-header">
-        <h1><a href="/2024/10/17/tx/">数据通信基础</a></h1>
+        <h1><a href="/2024/10/17/HCIA/%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">数据通信基础</a></h1>
         <div class="cube-excerpt-header-msg">
             <div class="cube-excerpt-date">
                 <i class="cube-icon cube-icon-date" aria-hidden="true"></i>
@@ -239,7 +239,101 @@
         
     </article>
     <footer class="cube-excerpt-footer">
-        <a class="cube-excerpt-more" href="/2024/10/17/tx/">阅读全文</a>
+        <a class="cube-excerpt-more" href="/2024/10/17/HCIA/%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">阅读全文</a>
+    </footer>
+</div>
+
+<div class="cube-excerpt" id="cube-excerpt-网络通信基础">
+    <header class="cube-excerpt-header">
+        <h1><a href="/2024/10/17/HCIA/%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80/">网络通信基础</a></h1>
+        <div class="cube-excerpt-header-msg">
+            <div class="cube-excerpt-date">
+                <i class="cube-icon cube-icon-date" aria-hidden="true"></i>
+                2024-10-17
+            </div>
+            <div class="cube-excerpt-tags">
+                <i class="cube-icon cube-icon-tag" aria-hidden="true"></i>
+                
+            </div>
+        </div>
+    </header>
+    <article class="cube-excerpt-entry cube-markdown">
+        
+        
+           <h1 id="网络通讯基础"><a href="#网络通讯基础" class="headerlink" title="网络通讯基础"></a>网络通讯基础</h1><h2 id="Contents："><a href="#Contents：" class="headerlink" title="Contents："></a>Contents：</h2><pre><code>1.通信与网络
+2.网络类型与网络拓扑
+3.网络工程与网络工程师
+</code></pre>
+<h2 id="网络通讯基本概念："><a href="#网络通讯基本概念：" class="headerlink" title="网络通讯基本概念："></a>网络通讯基本概念：</h2><pre><code>通信：就是两者之间 通过介质 实现的信息交流
+
+网络通讯：是指终端设备之间通过计算机网络进行通讯
+    1.两台计算机之间通过![alt text](image.png)网线通****讯
+    2.多台计算机通过路由器传递文件
+    3.计算机通过internet下载文件
+
+网关：接收并处理本地网段终端的数据，转发至目标网络的设备 称为网关
+终端设备：数据的产生者 和 接收者（一般是电脑，手机，服务器等）
+</code></pre>
+<h2 id="信息传递的过程；"><a href="#信息传递的过程；" class="headerlink" title="信息传递的过程；"></a>信息传递的过程；</h2><pre><code>快递：物品-&gt;包裹-&gt;集散中心-&gt;天空-&gt;集散中心-&gt;包裹-&gt;物品
+
+网络：数据-&gt;网关路由器-&gt;Internet-&gt;网关路由器-&gt;数据
+    (这种说法我个人在初学时是觉得非常简陋的描述，可能后续还会补充)
+</code></pre>
+<h2 id="常见的术语："><a href="#常见的术语：" class="headerlink" title="常见的术语："></a>常见的术语：</h2><pre><code>数据载荷（data）：最终想要传递的信息
+报文：网络中交换与传输的数据单元
+头部：在数据载荷的前面添加的信息段
+尾部：在数据载荷的后面添加的信息段
+封装：对数据载荷添加头部和尾部，形成新的报文的过程
+解封装：去掉报文的头部和尾部，获取数据载荷的过程
+网关：提供协议转换，路由选择，数据交换等功能的网络设备
+路由器：为报文选择传递路径的网络设备
+终端设备：数据通信的端设备，作为数据的发送者或接收者
+</code></pre>
+<h2 id="数据通信网络基本概念"><a href="#数据通信网络基本概念" class="headerlink" title="数据通信网络基本概念"></a>数据通信网络基本概念</h2><h3 id="数据通信网络："><a href="#数据通信网络：" class="headerlink" title="数据通信网络："></a>数据通信网络：</h3><pre><code>由服务器，交换机，防火墙，无线控制器，无线接入点，以及个人电脑，网络打印机，服务器等设备构成的通信网络。
+</code></pre>
+<h3 id="功能："><a href="#功能：" class="headerlink" title="功能："></a>功能：</h3><pre><code>数据通信网络最基本的功能是实现数据互通
+</code></pre>
+<h2 id="·网络设备"><a href="#·网络设备" class="headerlink" title="·网络设备"></a>·网络设备</h2><h3 id="1-交换机：数据交换，资源共享"><a href="#1-交换机：数据交换，资源共享" class="headerlink" title="1.交换机：数据交换，资源共享"></a>1.交换机：数据交换，资源共享</h3><pre><code>什么是网络？ =&gt;实现网络设备之间数据信息的传递
+什么是交换？ =&gt;交互替换
+</code></pre>
+<p>-1.二层交换机:</p>
+<pre><code>1.用于连接大量的终端设备
+2.实现数据同网段的转发
+3.分割了冲突域
+
+    *什么是冲突域？=&gt;A给B发送信息时，B也给A发送信息（电信号发生了冲突碰撞）
+    一般存在于共享式的网络连接上
+    
+    **冲突域不可避免**
+
+    -为了减少冲突域的问题：
+        1.先听后发
+        2.边听边发
+        3.冲突停发
+        4.随机时间重发
+
+    -解决：
+    交换机的每一个接口都是一个冲突域
+    交换机的每一个接口都只连接一台终端
+        
+</code></pre>
+<p>-2.三层交换机<br>    1.用于连接大量的终端设备<br>    2.实现数据同网段的转发<br>    3.分割了冲突域，广播域<br>    4.具备了部分的路由器功能</p>
+<h3 id="2-路由器："><a href="#2-路由器：" class="headerlink" title="2.路由器："></a>2.路由器：</h3><pre><code>什么是路由？ =&gt;路径由来
+</code></pre>
+<p>-路由器：<br>    1.实现数据跨网段的转发<br>    2.广域接入，地址转换<br>    3.隔离了冲突域，广播域</p>
+<pre><code>    广播域：一个广播报文能够到达的最大范围
+    广播：一对所有
+    
+</code></pre>
+<h1 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h1><pre><code>通信：就是两者之间 通过介质 实现的信息交流
+网关：接收并处理本地网段终端的数据，转发至目标网络的设备 称为网关
+终端设备：数据的产生者 和 接收者（一般是电脑，手机，服务器等）
+</code></pre>
+
+        
+    </article>
+    <footer class="cube-excerpt-footer">
+        <a class="cube-excerpt-more" href="/2024/10/17/HCIA/%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80/">阅读全文</a>
     </footer>
 </div>
 
@@ -306,9 +400,9 @@
     
     
     <div class="count">
-        <a class="count articles"><span>2</span>文章</a>
+        <a class="count articles"><span>3</span>文章</a>
         <a class="count tags"><span>0</span>标签</a>
-        <a class="count categories"><span>0</span>分类</a>
+        <a class="count categories"><span>1</span>分类</a>
     </div>
 </div>
 
@@ -345,7 +439,7 @@
                     <span>1</span>
                 </p>
                 <p class="title">
-                    <a href="/2024/10/17/tx/" title="数据通信基础">数据通信基础</a>
+                    <a href="/2024/10/17/HCIA/%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80/" title="网络通信基础">网络通信基础</a>
                 </p>
             </div>
             
@@ -359,6 +453,19 @@
                     <span>2</span>
                 </p>
                 <p class="title">
+                    <a href="/2024/10/17/HCIA/%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/" title="数据通信基础">数据通信基础</a>
+                </p>
+            </div>
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>3</span>
+                </p>
+                <p class="title">
                     <a href="/2024/10/16/Readme/" title="睁眼看世界">睁眼看世界</a>
                 </p>
             </div>
@@ -369,6 +476,20 @@
 </div>
 
 
+
+<div class="cube-categories cube-sidebar" id="cube-categories">
+    <div class="title">
+        <a href="/categories">分类</a>
+    </div>
+    <div class="cube-boxs">
+        
+        
+        <div class="cube-box ">
+            <a href="/categories/HCIA%E6%95%99%E7%A8%8B/">#HCIA教程</a>
+        </div>
+        
+    </div>
+</div>
 
 
 
