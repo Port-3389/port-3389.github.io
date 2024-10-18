@@ -337,7 +337,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                From P3389
+                睁眼看世界
                 
             </div>
 
@@ -355,7 +355,7 @@
                             
                         ],
                         startDelay: 300,
-                        typeSpeed: 100,
+                        typeSpeed: 150,
                         loop: true,
                         backSpeed: 50,
                         showCursor: true
@@ -433,14 +433,17 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                网络通讯基础Contents：1.通信与网络
+                                网络通讯基础Contents：
+1.通信与网络
 2.网络类型与网络拓扑
 3.网络工程与网络工程师
 
-网络通讯基本概念：通信：就是两者之间 通过介质 实现的信息交流
+网络通讯基本概念：
+通信：就是两者之间 通过介质 实现的信息交流
 
 网络通讯：是指终端设备之间通过计算机网络进行通讯
-    1.两台计算机之间
+
+1.两台计算机之间通
                             
                         </div>
                         <div class="publish-info">
@@ -478,10 +481,12 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                数据通信基础基本概念数据与信号1.模拟数据与数字数据通信的目的是为了交换信息，数据是信息的载体，信息涉及数据所表示的内涵。数据是信息的具体表现形式。
+                                数据通信基础基本概念数据与信号1. 模拟数据与数字数据
+通信的目的是为了交换信息，数据是信息的载体，信息涉及数据所表示的内涵。数据是信息的具体表现形式。
 
 模拟数据:是一段连续变化的数值，是一条曲线
-数字数据：是离散的，有有限个数的，是一条折线
+
+数字数据：是离散的，有有限个数的，是一
                             
                         </div>
                         <div class="publish-info">
@@ -570,17 +575,20 @@
     
 
     <div class="container row center-align"
-         style="margin-bottom: 0px !important;">
+         style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2024</span>
+                <span id="year">2024</span>
             
             <a href="/about" target="_blank">Port</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">1.8k</span>
             
             
             
@@ -602,6 +610,60 @@
 
             <!-- 运行天数提醒. -->
             
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2024";
+                        var startMonth = "10";
+                        var startDate = "18";
+                        var startHour = "21";
+                        var startMinute = "1";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
             <br>
             
         </div>
@@ -612,7 +674,7 @@
 
 
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:1454669418@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
@@ -622,7 +684,7 @@
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1454669418" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1454669418" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
 
@@ -791,6 +853,15 @@ $(function () {
     
     
     
+        
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/sakura.js"><\/script>');
+            }
+        </script>
+    
 
     <!-- 雪花特效 -->
     
@@ -823,8 +894,6 @@ $(function () {
 </script>
 
     
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
@@ -839,6 +908,8 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     
