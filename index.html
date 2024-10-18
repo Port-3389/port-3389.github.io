@@ -11,574 +11,442 @@
     
     
     <title>梦开始的地方</title>
-    <!-- inject:style -->
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <!-- endinject -->
-    <style>
-        .cube-loading {
-            top: 0;
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background: url('/images/lg/loading.gif') no-repeat center center;
-            background-color: rgba(0,0,0,.7);
-        }
+    <link href="https://Port-3389.github.io" rel="prefetch" />
 
-        .cube-loading.out {
-            display: none;
-        }
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
 
-        .cube-loading:before {
-            display: block;
-            content: '加载中';
-            position: relative;
-            width: 100%;
-            top: 50%;
-            right: -50%;
-            color: #fff;
-        }
+    
+<script src="/js/jquery.min.js"></script>
 
-        @media(max-width: 768px) {
-            .cube-loading:before {
-                font-size: 1.2em;
-                transform: translate(-24px,20px);
-                -webkit-transform: translate(-24px,20px);
-                -o-transform: translate(-24px,20px);
-                -ms-transform: translate(-24px,20px);
-            }
-        }
+    
+<script src="/js/bootstrap.min.js"></script>
 
-        @media(min-width: 768px) {
-            .cube-loading:before {
+    
+<script src="/js/aos.js"></script>
 
+    
+<script src="/js/highslide/highslide-full.min.js"></script>
+
+    
+<link rel="stylesheet" href="/js/highslide/highslide.css">
+
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
             }
         }
     </style>
     
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/avatar.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+        }
+      }
+    </script>-->
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body>
-<div class="cube-body">
-    <nav id="cube-top-memu" class="cube-menu">
-    <ul class="cube-menu-collapse">
-        
-        <li>
-            <i class="cube-icon cube-icon-home" aria-hidden="true"></i>
-            <a href="/">首页</a>
-        </li>
-        
-        <li>
-            <i class="cube-icon cube-icon-archive" aria-hidden="true"></i>
-            <a href="/archives">归档</a>
-        </li>
-        
-        <li>
-            <i class="cube-icon cube-icon-categories" aria-hidden="true"></i>
-            <a href="/categories">分类</a>
-        </li>
-        
-        <li>
-            <i class="cube-icon cube-icon-tags" aria-hidden="true"></i>
-            <a href="/tags">标签</a>
-        </li>
-        
-        <li>
-            <i class="cube-icon cube-icon-about" aria-hidden="true"></i>
-            <a href="/about-me">关于我</a>
-        </li>
-        
+    <!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
     </ul>
-</nav>
-<nav class="cube-side-menu" id="cube-side-menu">
-    <ul class="cube-menu-list">
-        
-        <li>
-            <a class="lrc-control">开启歌词</a>
-        </li>
-        
-        <li>
-            <a class="scroll-to-top">回到顶部</a>
-        </li>
-    </ul>
-</nav>
-    <header class="cube-header" id="cube-header">
-    <img src=" https://s2.loli.net/2024/10/17/Rp1FGtPxzWl4qKy.png " alt="头部背景图片">
+</section>
+    <!-- 欧尼酱功能, 谁用谁知道 -->
     
-    <div class="cube-type">
-        <span class="cube-typed-title">睁眼看世界——3389端口的博客</span>
-        <span class="cube-typed-cursor">|</span>
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".bs-navbar-collapse"
+                    aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="https://Port-3389.github.io">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">梦开始的地方</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class="current">
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/categories/HCIA%E6%95%99%E7%A8%8B/">HCIA教程</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                
+                <li class="">
+                    <a href="/tags">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
     </div>
-    
 </header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<div class="alert well fade in" id="gal-issue" role="alert">
+    <!-- TODO 添加关闭公告框功能 -->
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <!-- 这里自行配置公告内容 -->
+    这里是公告内容
+    <br>
+    配置相关说明请看<strong>_config.yml</strong>
+    <!-- 自行配置公告内容结束 -->
+</div>
 
-    <style>
-        nav.cube-menu:before {
-            content: '';
-            visibility: hidden;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 44px;
-        
-            filter: blur(5px);
-            -webkit-filter: blur(5px);
-        
-            z-index: -1;
-            background-image: url('https://cdn.jsdelivr.net/gh/Justlovesmile/CDN2/post/cover1.JPG');
-            background-repeat: no-repeat;
-            background-position: center -356px;
-            background-size: cover;
-            background-color: transparent;
-        }
+<div id="article-list">
+     
+     
+</div>
+<!-- 前方最多7个 < 1 2 3 4 5 6 -->
+<!-- 前方超过第7页则分为 < 1 ... (n - 3) (n - 2) (n - 1) n, 此时前面为固定的6个 -->
 
-        header.cube-background.cube-header-background {
-            visibility: hidden;
-            background-image: url('https://cdn.jsdelivr.net/gh/Justlovesmile/CDN2/post/cover1.JPG');
-            background-position: center -400px;
-        }
-    </style>
-    <header class="cube-background cube-header-background">
+<!-- 后方最多8个 (n + 1) 到 (n + 7) > -->
+<!-- 如果末页和当前页相差超过7, 此时后面为固定的6个, (n + 1) (n + 2) (n + 3) ... total > -->
+
+
+
+<div id="gal-pagination" class="clearfix">
+    <ul class="pagination pagination-gal pull-right">
         
-        <div class="cube-type">
-            <span class="cube-typed-title">睁眼看世界——3389端口的博客</span>
-            <span class="cube-typed-cursor">|</span>
+        
+        
+        
+        <li class="current">
+            <span>1</span>
+        </li>
+        
+        
+        
+        
+    </ul>
+</div>
+
+<!-- 加上这段代码原因： gitment在首页加载时, 如果找不到对应的控件会报错，此处加上，同时设置为none，防止报错 -->   
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get"
+              action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            Port
+            <i class="fa fa-quote-right"></i>
         </div>
-        
-    </header>
-    <div class="load-header-background"></div>
-    <script>
-        (function (window) {
-
-            window.headerModule = {}
-            window.headerModule.image = {
-                width: '2000',
-                height: '1714'
-            }
-
-        })(window)
-    </script>
+        <div class="author-panel text-center">
+            <img src="/imgs/avatar.jpg" width="140" height="140"
+                 alt="个人头像" class="author-image">
+            <p class="author-description"></p>
+        </div>
+    </div>
+</aside>
     
-    <div class="cube-content">
-        <div class="cube-left">
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            最新评论
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
             
-<div class="cube-excerpt" id="cube-excerpt-睁眼看世界">
-    <header class="cube-excerpt-header">
-        <h1><a href="/2024/10/16/Readme/">睁眼看世界</a></h1>
-        <div class="cube-excerpt-header-msg">
-            <div class="cube-excerpt-date">
-                <i class="cube-icon cube-icon-date" aria-hidden="true"></i>
-                2024-10-16
-            </div>
-            <div class="cube-excerpt-tags">
-                <i class="cube-icon cube-icon-tag" aria-hidden="true"></i>
-                
-            </div>
-        </div>
-    </header>
-    <article class="cube-excerpt-entry cube-markdown">
-        
-        
-           <p> 欢迎来到这里! 这是3389端口的个人博客与技术分享空间. </p>
-<h2 id="愿长大网络再次伟大！-——来自奋斗中的3389"><a href="#愿长大网络再次伟大！-——来自奋斗中的3389" class="headerlink" title="愿长大网络再次伟大！   ——来自奋斗中的3389"></a>愿长大网络再次伟大！   ——来自奋斗中的3389</h2><h3 id="再开始之前"><a href="#再开始之前" class="headerlink" title="再开始之前"></a>再开始之前</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">该站点建立于2024年10月16日傍晚7时25分，是一个个人分享技术</span><br><span class="line">和生活的地方，同时也希望是大家梦开始的地方</span><br></pre></td></tr></table></figure>
-<h3 id="为什么创造这个地方？"><a href="#为什么创造这个地方？" class="headerlink" title="为什么创造这个地方？"></a>为什么创造这个地方？</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">基于技术共享性的学习和互助理念</span><br></pre></td></tr></table></figure>
-<h3 id="能在这里学到什么？"><a href="#能在这里学到什么？" class="headerlink" title="能在这里学到什么？"></a>能在这里学到什么？</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">目前是基于HCIA数据通信方向的知识，后续会慢慢拓展技术支持</span><br></pre></td></tr></table></figure>
-<h3 id="浏览该站需要注意什么？"><a href="#浏览该站需要注意什么？" class="headerlink" title="浏览该站需要注意什么？"></a>浏览该站需要注意什么？</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">该站国内网络连接并不是很稳定，这或许需要浏览用户有较好的网</span><br><span class="line">络或者是一个可以“科学上网”的方法，如果没有“科学上网”，请不</span><br><span class="line">要担心，在一般良好的网络下亦可以访问网页</span><br></pre></td></tr></table></figure>
-
-<h5 id="每天都是新开始，睁眼才能看世界"><a href="#每天都是新开始，睁眼才能看世界" class="headerlink" title="每天都是新开始，睁眼才能看世界"></a>每天都是新开始，睁眼才能看世界</h5>
-        
-    </article>
-    <footer class="cube-excerpt-footer">
-        <a class="cube-excerpt-more" href="/2024/10/16/Readme/">阅读全文</a>
-    </footer>
-</div>
-
-<div class="cube-excerpt" id="cube-excerpt-1.数据通信基础">
-    <header class="cube-excerpt-header">
-        <h1><a href="/2024/10/17/HCIA/1.%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">1.数据通信基础</a></h1>
-        <div class="cube-excerpt-header-msg">
-            <div class="cube-excerpt-date">
-                <i class="cube-icon cube-icon-date" aria-hidden="true"></i>
-                2024-10-17
-            </div>
-            <div class="cube-excerpt-tags">
-                <i class="cube-icon cube-icon-tag" aria-hidden="true"></i>
-                
-            </div>
-        </div>
-    </header>
-    <article class="cube-excerpt-entry cube-markdown">
-        
-        
-           <h1 id="数据通信基础"><a href="#数据通信基础" class="headerlink" title="数据通信基础"></a>数据通信基础</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="数据与信号"><a href="#数据与信号" class="headerlink" title="数据与信号"></a>数据与信号</h3><h4 id="1-模拟数据与数字数据"><a href="#1-模拟数据与数字数据" class="headerlink" title="1.模拟数据与数字数据"></a>1.模拟数据与数字数据</h4><pre><code>通信的目的是为了交换信息，数据是信息的载体，信息涉及数据所表示的内涵。数据是信息的具体表现形式。
-
-模拟数据:是一段连续变化的数值，是一条曲线
-数字数据：是离散的，有有限个数的，是一条折线
-</code></pre>
-<h4 id="2-模拟信号与数字信号"><a href="#2-模拟信号与数字信号" class="headerlink" title="2.模拟信号与数字信号"></a>2.模拟信号与数字信号</h4><pre><code>模拟信号：是一种随时间推移而平稳变化的连续波形式。
-数字信号：是一种脉冲式波形
-
-用数字信号形式来表示数字或模拟信号称为编码。用模拟信号来表示数字或模拟数据称为调制。
-</code></pre>
-<h4 id="3-比特和码元"><a href="#3-比特和码元" class="headerlink" title="3.比特和码元"></a>3.比特和码元</h4><pre><code>比特和码元是完全不同的两个概念。
-
-比特：是二进制数据的最小单位。
-码元：是表示数据的基本信号波形。
-
-一个码元就是一个完整，独立，固定时长的信号波长，该时长也称为码元宽度。码元的状态个数称为码元编码级数。
-</code></pre>
-<h4 id="4-周期信号和非周期信号"><a href="#4-周期信号和非周期信号" class="headerlink" title="4.周期信号和非周期信号"></a>4.周期信号和非周期信号</h4><pre><code>如果一个信号在可测定的时间内，以相同的时间间隔不断重复一个固定模式，则称其为周期信号，一个固定模式持续的时间间隔称为基波信号周期，一般用T来表示
-
-如果一个信号在随时间不断变化的过程中，没有固定的模式和波形循环出现，则称其为非周期信号。例如，语言的音波信号就是典型的非周期信号。
-</code></pre>
-<h4 id="5-信号分析工具"><a href="#5-信号分析工具" class="headerlink" title="5.信号分析工具"></a>5.信号分析工具</h4><pre><code>在数据通信中，观察和分析电信号的基本方法有时域分析和频域分析。时域分析是以时间为自变量，用示波器观察，测量电信号随时间变化的情况。频域分析是以频率为自变量，通过傅里叶分析，用频谱仪观察，测量信号的频谱组成，振幅与相位，分析电信号通过信通后频率分量的变化。信号频域分析的重要理论是傅里叶级数（也称傅里叶分析）
-</code></pre>
-<h4 id="6-模拟信号的三要素"><a href="#6-模拟信号的三要素" class="headerlink" title="6.模拟信号的三要素"></a>6.模拟信号的三要素</h4><pre><code>模拟信号的课分为简单模拟信号和复合模拟信号。简单模拟信号不能再分解。
-一般的，A表示振幅，反映了信号的强弱，T是信号周期，φ是相位，反映了波形的相对于时间轴零点的位置。这就是模拟信号的三要素。
-</code></pre>
-<h4 id="7-数字信号分析"><a href="#7-数字信号分析" class="headerlink" title="7.数字信号分析"></a>7.数字信号分析</h4>
-        
-    </article>
-    <footer class="cube-excerpt-footer">
-        <a class="cube-excerpt-more" href="/2024/10/17/HCIA/1.%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">阅读全文</a>
-    </footer>
-</div>
-
-<div class="cube-excerpt" id="cube-excerpt-2.网络通信基础">
-    <header class="cube-excerpt-header">
-        <h1><a href="/2024/10/17/HCIA/2.%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80/">2.网络通信基础</a></h1>
-        <div class="cube-excerpt-header-msg">
-            <div class="cube-excerpt-date">
-                <i class="cube-icon cube-icon-date" aria-hidden="true"></i>
-                2024-10-17
-            </div>
-            <div class="cube-excerpt-tags">
-                <i class="cube-icon cube-icon-tag" aria-hidden="true"></i>
-                
-            </div>
-        </div>
-    </header>
-    <article class="cube-excerpt-entry cube-markdown">
-        
-        
-           <h1 id="网络通讯基础"><a href="#网络通讯基础" class="headerlink" title="网络通讯基础"></a>网络通讯基础</h1><h2 id="Contents："><a href="#Contents：" class="headerlink" title="Contents："></a>Contents：</h2><pre><code>1.通信与网络
-2.网络类型与网络拓扑
-3.网络工程与网络工程师
-</code></pre>
-<h2 id="网络通讯基本概念："><a href="#网络通讯基本概念：" class="headerlink" title="网络通讯基本概念："></a>网络通讯基本概念：</h2><pre><code>通信：就是两者之间 通过介质 实现的信息交流
-
-网络通讯：是指终端设备之间通过计算机网络进行通讯
-    1.两台计算机之间通过![alt text](image.png)网线通****讯
-    2.多台计算机通过路由器传递文件
-    3.计算机通过internet下载文件
-
-网关：接收并处理本地网段终端的数据，转发至目标网络的设备 称为网关
-终端设备：数据的产生者 和 接收者（一般是电脑，手机，服务器等）
-</code></pre>
-<h2 id="信息传递的过程；"><a href="#信息传递的过程；" class="headerlink" title="信息传递的过程；"></a>信息传递的过程；</h2><pre><code>快递：物品-&gt;包裹-&gt;集散中心-&gt;天空-&gt;集散中心-&gt;包裹-&gt;物品
-
-网络：数据-&gt;网关路由器-&gt;Internet-&gt;网关路由器-&gt;数据
-    (这种说法我个人在初学时是觉得非常简陋的描述，可能后续还会补充)
-</code></pre>
-<h2 id="常见的术语："><a href="#常见的术语：" class="headerlink" title="常见的术语："></a>常见的术语：</h2><pre><code>数据载荷（data）：最终想要传递的信息
-报文：网络中交换与传输的数据单元
-头部：在数据载荷的前面添加的信息段
-尾部：在数据载荷的后面添加的信息段
-封装：对数据载荷添加头部和尾部，形成新的报文的过程
-解封装：去掉报文的头部和尾部，获取数据载荷的过程
-网关：提供协议转换，路由选择，数据交换等功能的网络设备
-路由器：为报文选择传递路径的网络设备
-终端设备：数据通信的端设备，作为数据的发送者或接收者
-</code></pre>
-<h2 id="数据通信网络基本概念"><a href="#数据通信网络基本概念" class="headerlink" title="数据通信网络基本概念"></a>数据通信网络基本概念</h2><h3 id="数据通信网络："><a href="#数据通信网络：" class="headerlink" title="数据通信网络："></a>数据通信网络：</h3><pre><code>由服务器，交换机，防火墙，无线控制器，无线接入点，以及个人电脑，网络打印机，服务器等设备构成的通信网络。
-</code></pre>
-<h3 id="功能："><a href="#功能：" class="headerlink" title="功能："></a>功能：</h3><pre><code>数据通信网络最基本的功能是实现数据互通
-</code></pre>
-<h2 id="·网络设备"><a href="#·网络设备" class="headerlink" title="·网络设备"></a>·网络设备</h2><h3 id="1-交换机：数据交换，资源共享"><a href="#1-交换机：数据交换，资源共享" class="headerlink" title="1.交换机：数据交换，资源共享"></a>1.交换机：数据交换，资源共享</h3><pre><code>什么是网络？ =&gt;实现网络设备之间数据信息的传递
-什么是交换？ =&gt;交互替换
-</code></pre>
-<p>-1.二层交换机:</p>
-<pre><code>1.用于连接大量的终端设备
-2.实现数据同网段的转发
-3.分割了冲突域
-
-    *什么是冲突域？=&gt;A给B发送信息时，B也给A发送信息（电信号发生了冲突碰撞）
-    一般存在于共享式的网络连接上
-    
-    **冲突域不可避免**
-
-    -为了减少冲突域的问题：
-        1.先听后发
-        2.边听边发
-        3.冲突停发
-        4.随机时间重发
-
-    -解决：
-    交换机的每一个接口都是一个冲突域
-    交换机的每一个接口都只连接一台终端
-        
-</code></pre>
-<p>-2.三层交换机<br>    1.用于连接大量的终端设备<br>    2.实现数据同网段的转发<br>    3.分割了冲突域，广播域<br>    4.具备了部分的路由器功能</p>
-<h3 id="2-路由器："><a href="#2-路由器：" class="headerlink" title="2.路由器："></a>2.路由器：</h3><pre><code>什么是路由？ =&gt;路径由来
-</code></pre>
-<p>-路由器：<br>    1.实现数据跨网段的转发<br>    2.广域接入，地址转换<br>    3.隔离了冲突域，广播域</p>
-<pre><code>    广播域：一个广播报文能够到达的最大范围
-    广播：一对所有
-    
-</code></pre>
-<h1 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h1><pre><code>通信：就是两者之间 通过介质 实现的信息交流
-网关：接收并处理本地网段终端的数据，转发至目标网络的设备 称为网关
-终端设备：数据的产生者 和 接收者（一般是电脑，手机，服务器等）
-</code></pre>
-
-        
-    </article>
-    <footer class="cube-excerpt-footer">
-        <a class="cube-excerpt-more" href="/2024/10/17/HCIA/2.%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80/">阅读全文</a>
-    </footer>
-</div>
-
-
-
-<ul class="cube-pagination cube-pagination-6">
-    
-    <li class="cube-pagination-prev disabled">
-        <span>« 上一页</span>
-    </li>
-    
-    
-        
-            
-            <li class="cube-pagination-index disabled">
-                <span>1</span>
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2024/10/17/HCIA/2.%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80/">2.网络通信基础</a>
+                </span>
             </li>
             
-        
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2024/10/17/HCIA/1.%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">1.数据通信基础</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2024/10/16/Readme/">睁眼看世界</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
     
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2024/10/16/Readme/">睁眼看世界</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2024/10/17/HCIA/1.%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">1.数据通信基础</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2024/10/17/HCIA/2.%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80/">2.网络通信基础</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
 
+                
+                <li>
+                    <a href="/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+                
+            </ul>
+            <div class="tab-content">
+                
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <li class="cube-pagination-next disabled">
-        <span>下一页 »</span>
+</div>
+                
+                
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
     </li>
     
-</ul>
-
-<!--其他组件后续添加-->
+    <li>
+        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
+    </li>
+    
+    <li>
+        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
+    </li>
+    
+</div>
+                
+                
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://github.com/ZEROKISEKI/" target="_blank">Github</a>
+    </li>
+    
+    <li>
+        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
+    </li>
+    
+    <li>
+        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
+    </li>
+    
+</div>
+                
+            </div>
         </div>
-        <div class="cube-right">
-            
-
-<div class="cube-search cube-sidebar" id="cube-search">
-    <div class="search-container">
-        <input type="text" placeholder="搜索" class="cube-search-input" id="cube-search-input">
-        <i class="cube-icon cube-icon-search cube-search-submit" aria-hidden="true"></i>
-    </div>
-    <!-- TODO 通过给window赋一个全局变量，通过脚本赋值 -->
-</div>
-<script>
-    (function (window) {
-        'use strict';
-        window.searchModule = {}
-        window.searchModule.JSONUrl = '/content.json'
-        window.searchModule.rootUrl = '/'
-    })(window)
-</script>
-<div class="cube-search-form">
-    <div class="cube-search-control">
-        <input type="text" placeholder="搜索" class="search-input">
-        <a class="close-button">
-            <i class="cube-icon cube-close" aria-hidden="true"></i>
-        </a>
-    </div>
-    <div class="cube-search-result"></div>
-</div>
-
-
-<div class="cube-author cube-sidebar" id="cube-author">
+    </aside>
     
-    
-    <span>Port</span>
-    
-    
-    <div class="count">
-        <a class="count articles"><span>3</span>文章</a>
-        <a class="count tags"><span>0</span>标签</a>
-        <a class="count categories"><span>1</span>分类</a>
-    </div>
-</div>
-
-
-
-<div class="cube-music cube-sidebar" id="cube-music">
-    <div class="cube-player aplayer" id="cube-player"></div>
-</div>
-<script>
-    (function (window) {
-        window.musicModule = {}
-        window.musicModule.musicConfig = '{"narrow":false,"autoplay":false,"showlrc":3,"theme":"#b7daff","mutex":true,"mode":"circulation","preload":"auto","listmaxheight":"513px","music":[{"title":"Dear friends","author":"TRIPLANE","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/TRIPLANE - Dear friends.mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/Dear friends - TRIPLANE.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/TRIPLANE - Dear friends.jpg"},{"title":"Butter-Fly","author":"和田光司","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/和田光司 - Butter-Fly (ピアノヴァージョン).mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/Butter-Fly (ピアノヴァージョン) - 和田光司.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/和田光司 - Butter-Fly (ピアノヴァージョン).jpg"},{"title":"宵闇花火","author":"葉月ゆら","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/葉月ゆら - 宵闇花火.mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/宵闇花火 - 葉月ゆら.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/葉月ゆら - 宵闇花火.jpg"}]}'
-        window.musicModule.lrcConfig = {
-            open: '开启歌词',
-            close: '关闭歌词'
-        }
-    })(window)
-</script>
-
-
-
-<div class="cube-recent-posts cube-sidebar" id="cube-recent-posts">
-    <div class="title">
-        <a>近期文章</a>
-    </div>
-    <ul class="list">
-        
-        
-        <li>
-            <!-- TODO 如果文章要显示图片，那么在front-matter上添加preview属性(url or path) -->
-            
-            <div class="normal">
-                <p class="index first">
-                    <span>1</span>
-                </p>
-                <p class="title">
-                    <a href="/2024/10/17/HCIA/2.%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80/" title="2.网络通信基础">2.网络通信基础</a>
-                </p>
+</aside>
             </div>
-            
-        </li>
-        
-        
-        
-        <li>
-            <div class="normal">
-                <p class="index">
-                    <span>2</span>
-                </p>
-                <p class="title">
-                    <a href="/2024/10/17/HCIA/1.%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/" title="1.数据通信基础">1.数据通信基础</a>
-                </p>
-            </div>
-        </li>
-        
-        
-        
-        <li>
-            <div class="normal">
-                <p class="index">
-                    <span>3</span>
-                </p>
-                <p class="title">
-                    <a href="/2024/10/16/Readme/" title="睁眼看世界">睁眼看世界</a>
-                </p>
-            </div>
-        </li>
-        
-        
-    </ul>
-</div>
-
-
-
-<div class="cube-categories cube-sidebar" id="cube-categories">
-    <div class="title">
-        <a href="/categories">分类</a>
-    </div>
-    <div class="cube-boxs">
-        
-        
-        <div class="cube-box ">
-            <a href="/categories/HCIA%E6%95%99%E7%A8%8B/">#HCIA教程</a>
-        </div>
-        
-    </div>
-</div>
-
-
-
-
-
-<div class="cube-links cube-sidebar" id="cube-links">
-    <div class="title">
-        <a>个人链接</a>
-    </div>
-    <ul class="list">
-        
-        <li>
-            
-            
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/GitHub.png">
-            
-            <a href="https://github.com/" target="_blank">GitHub</a>
-        </li>
-        
-        <li>
-            
-            
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/Coding.png">
-            
-            <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
-        </li>
-        
-        <li>
-            
-            
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/SF.png">
-            
-            <a href="https://segmentfault.com/u/aonosora" target="_blank">SF社区</a>
-        </li>
-        
-        <li>
-            
-            
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/开发者头条.png">
-            
-            <a href="https://toutiao.io/u/148070" target="_blank">开发者头条</a>
-        </li>
-        
-    </ul>
-</div>
-
-
-
-<div class="cube-friend-links cube-sidebar" id="cube-friend-links">
-    <div class="title">
-        <a>友情链接</a>
-    </div>
-    <ul class="list">
-        
-        <li>
-            <!-- TODO change avatar.png to friend.png-->
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/friend_links/micblo.png">
-            <a href="https://blog.micblo.com/" target="_blank">罗大佬</a>
-        </li>
-        
-        <li>
-            <!-- TODO change avatar.png to friend.png-->
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/friend_links/DIYgod.jpg">
-            <a href="https://www.anotherhome.net/" target="_blank">DIYgod</a>
-        </li>
-        
-        <li>
-            <!-- TODO change avatar.png to friend.png-->
-            <img src="/images/friend_links.jpg ">
-            <a href="https://aonosora.com/" target="_blank">咪西西の部落格</a>
-        </li>
-        
-    </ul>
-</div>
-
-
         </div>
     </div>
-</div>
-<footer class="cube-footer">
-    
-© 2017 Port
-
-<br>
-Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2018 Port Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+    </div>
 </footer>
-<!-- inject:script -->
-<script src="/js/script.js"></script>
-<!-- endinject -->
-<div class="cube-loading out"></div>
+
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
 </body>
+
+<script src="/js/activate-power-mode.js"></script>
+
+<script>
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
+</script>
+
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
+
+
+
+
 </html>
