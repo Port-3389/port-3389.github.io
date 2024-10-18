@@ -45,8 +45,6 @@
 
 
     
-        <link rel="stylesheet" type="text/css" href="/css/reward.css">
-    
 
 
 
@@ -355,7 +353,7 @@
                             
                         ],
                         startDelay: 300,
-                        typeSpeed: 150,
+                        typeSpeed: 100,
                         loop: true,
                         backSpeed: 50,
                         showCursor: true
@@ -745,7 +743,19 @@
             
             
             
+                
             
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
             
             <br>
 
@@ -763,8 +773,8 @@
                         var startYear = "2024";
                         var startMonth = "10";
                         var startDate = "18";
-                        var startHour = "21";
-                        var startMinute = "1";
+                        var startHour = "12";
+                        var startMinute = "0";
                         var startSecond = "0";
                         var todayYear = today.getFullYear();
                         var todayMonth = today.getMonth() + 1;
@@ -808,7 +818,7 @@
             <br>
             
         </div>
-        <div class="col s12 m4 l4 social-link ">
+        <div class="col s12 m4 l4 social-link social-statis">
     <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
@@ -1034,6 +1044,8 @@ $(function () {
 </script>
 
     
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
