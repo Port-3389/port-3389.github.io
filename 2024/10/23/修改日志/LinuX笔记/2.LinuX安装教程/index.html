@@ -4,14 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="睁眼看世界, 梦的开始地">
-    <meta name="description" content="
-欢迎来到这里! 这是3389端口的个人博客与技术分享空间.
-
-愿长大网工再次伟大！   ——来自奋斗中的3389再开始之前
-该站点建立于2024年10月16日傍晚7时25分，是一个个人分享技术
-和生活的地方，同时也希望是大家梦开始的地方
-">
+    <meta name="keywords" content="LinuX安装教程, 梦的开始地">
+    <meta name="description" content="在LinuX安装之前一般的情况来说，一个硬件设备PC，只能同时使用一套操作系统，这个讲述很好理解。就像是你的手机上只能有一个微信app.可是这样就有个问题。假设我希望有另一个微信该怎么办呢？如果只有一个微信app,这样就不是和很好处理，两个">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>睁眼看世界 | 梦的开始地</title>
+    <title>LinuX安装教程 | 梦的开始地</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -323,7 +317,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">睁眼看世界</h1>
+                    <h1 class="description center-align post-title">LinuX安装教程</h1>
                 </div>
             </div>
         </div>
@@ -347,14 +341,23 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%89%8D%E8%A8%80/">
-                                <span class="chip bg-color">前言</span>
+                            <a href="/tags/linux/">
+                                <span class="chip bg-color">linux</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/LinuX%E6%95%99%E7%A8%8B/" class="post-category">
+                                LinuX教程
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -363,7 +366,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-10-16
+                    2024-10-23
                 </div>
                 
 
@@ -377,14 +380,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    425
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    5 分
                 </div>
                 
 
@@ -404,46 +407,218 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <ul>
-<li>欢迎来到这里! 这是3389端口的个人博客与技术分享空间.</li>
+                <h1 id="在LinuX安装之前"><a href="#在LinuX安装之前" class="headerlink" title="在LinuX安装之前"></a>在LinuX安装之前</h1><p>一般的情况来说，一个硬件设备PC，只能<font color=tan>同时使用一套操作系统</font>，这个讲述很好理解。就像是你的手机上只能有一个微信app.可是这样就有个问题。假设我希望有另一个微信该怎么办呢？如果只有一个微信app,这样就不是和很好处理，两个微信，需要来回切换。所以就有了一个东西，叫做——微信分身。同理一台PC想要同时有windows系统与linux系统同时运行，在理论上是不可能的。所以linux我们将会部署在虚拟机上（可以理解为一个<font color=red>系统分身</font>），所以该片文章，与其说是Linux的安装，不如称为是<font color=cyan>如何将Linux系统部署安装在虚拟机上</font>。</p>
+<h2 id="LinuX系统发行版本选择"><a href="#LinuX系统发行版本选择" class="headerlink" title="LinuX系统发行版本选择"></a>LinuX系统发行版本选择</h2><ul>
+<li>总所周知，LinuX是一个可改系统，他的可改性就造就了它有多个领域的版本与对应版本的应用，在这里我们将会列出主流的LinuX系统，可以供读者后期自我选择学习。</li>
 </ul>
-<h2 id="愿长大网工再次伟大！-——来自奋斗中的3389"><a href="#愿长大网工再次伟大！-——来自奋斗中的3389" class="headerlink" title="愿长大网工再次伟大！   ——来自奋斗中的3389"></a>愿长大网工再次伟大！   ——来自奋斗中的3389</h2><h3 id="再开始之前"><a href="#再开始之前" class="headerlink" title="再开始之前"></a>再开始之前</h3><ul>
-<li>该站点建立于2024年10月16日傍晚7时25分，是一个个人分享技术</li>
-<li>和生活的地方，同时也希望是大家梦开始的地方</li>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">linuX系统应用领域</td>
+<td align="center">Linux系统发行版本选择</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">LinuX桌面系统领域</td>
+<td align="center">Ubuntu(乌班图)（开发人员开发平台）</td>
+</tr>
+<tr>
+<td align="center"><font color=tan>LinuX服务器系统领域</font></td>
+<td align="center"><font color=tan>Rad hat(红帽)开源的系统，主流的服务器安装系统，与CentOS基本上一模一样，但是升级或安装需要收费，对应的也有更好的服务</font></td>
+</tr>
+<tr>
+<td align="center"><font color=red>LinuX服务器学习领域</font></td>
+<td align="center"><font color=red>CentOS开源免费的系统，基本上和Rad hat一模一样，不过没有对应的服务</font></td>
+</tr>
+<tr>
+<td align="center">LinuX系统安全要求比较高的领域</td>
+<td align="center">Debian或FreeBSD</td>
+</tr>
+<tr>
+<td align="center">使用数据库高级服务或电子邮件服务，网络服务各种领域</td>
+<td align="center">SUSE（德国多）&#x2F;openSUSE</td>
+</tr>
+<tr>
+<td align="center">想尝试新技术和新功能</td>
+<td align="center">Fredora属于rhel和centos的测试版本或预发版本</td>
+</tr>
+<tr>
+<td align="center">LinuX中文版本</td>
+<td align="center">红旗Linuz、麒麟Linux</td>
+</tr>
+<tr>
+<td align="center">需要网络安全渗透攻击领域应用</td>
+<td align="center">Kail(卡莉)集成了大量安全扫描渗透，以及探针探嗅工具</td>
+</tr>
+</tbody></table>
+<ul>
+<li>本教程进行讲解的LinuX运维技术主要是基于centOS7</li>
 </ul>
-<h3 id="为什么创造这个地方"><a href="#为什么创造这个地方" class="headerlink" title="为什么创造这个地方"></a>为什么创造这个地方</h3><ul>
-<li>基于技术共享性的学习和互助理念</li>
+<h2 id="硬件环境要求："><a href="#硬件环境要求：" class="headerlink" title="硬件环境要求："></a>硬件环境<font color=red>要求</font>：</h2><p>CPU-中央处理器，最低i5，最好i9</p>
+<p>MEM-内存，最低16G，最好32G</p>
+<p>DISK-磁盘，最低要求500G，1T以上最佳</p>
+<h2 id="LinuX操作系统安装部署过程："><a href="#LinuX操作系统安装部署过程：" class="headerlink" title="LinuX操作系统安装部署过程："></a>LinuX操作系统安装部署过程：</h2><ol>
+<li><p>安装虚拟主机环境</p>
+</li>
+<li><p>安装操作系统</p>
+</li>
+</ol>
+<h2 id="什么是虚拟软件？"><a href="#什么是虚拟软件？" class="headerlink" title="什么是虚拟软件？"></a>什么是虚拟软件？</h2><p>在主机上安装，多系统之间是有可能有冲突的，而且系统的切换要重启主机，非常麻烦</p>
+<ul>
+<li>所以——虚拟软件是基于底层硬件资源，构建<font color=green>相互隔离的虚拟主机环境</font>（多开）</li>
 </ul>
-<h3 id="能在这里学到什么？"><a href="#能在这里学到什么？" class="headerlink" title="能在这里学到什么？"></a>能在这里学到什么？</h3><ul>
-<li>目前是基于HCIA数据通信方向的知识，后续会慢慢拓展技术支持</li>
-</ul>
-<h3 id="浏览该站需要注意什么？"><a href="#浏览该站需要注意什么？" class="headerlink" title="浏览该站需要注意什么？"></a>浏览该站需要注意什么？</h3><ul>
-<li>该站国内网络连接并不是很稳定，这或许需要浏览用户有较好的网<br>络或者是一个可以“科学上网”的方法，如果没有“科学上网”，请不<br>要担心，在一般良好的网络下亦可以访问网页</li>
-</ul>
-<h3 id="关于评论"><a href="#关于评论" class="headerlink" title="关于评论"></a>关于评论</h3><ul>
-<li><p>该站支持评论但有以下规则：</p>
+<h2 id="诞生："><a href="#诞生：" class="headerlink" title="诞生："></a>诞生：</h2><ol>
+<li><p>可以充分发挥服务器硬件资源性能</p>
+</li>
+<li><p>可以对系统环境进行隔离配置</p>
+</li>
+<li><p>可以有效节省物理空间</p>
+</li>
+</ol>
+<h2 id="系统安装部署问题梳理："><a href="#系统安装部署问题梳理：" class="headerlink" title="系统安装部署问题梳理："></a>系统安装部署问题梳理：</h2><ol>
+<li><p>虚拟主机VMware-workstation安装</p>
 <ol>
-<li><p>禁止发布任何违反中华人民共和国法律法规以及 “九不准” 的内容</p>
+<li><p>下载：</p>
+<p> 官方下载地址：<a target="_blank" rel="noopener" href="https://vmware.mdsoft.top/?bd_vid=10871491916340730523">https://vmware.mdsoft.top/?bd_vid=10871491916340730523</a></p>
 </li>
-<li><p>禁止发布任何与文章无关的内容</p>
-</li>
-<li><p>禁止发布任何人身攻击，侮辱、诽谤他人的内容</p>
-</li>
-<li><p>禁止发布任何恶意引战，煽动对立、散播仇恨情绪的内容</p>
-</li>
-<li><p>禁止发布未经授权的转载内容</p>
-</li>
-<li><p>禁止其他不宜在网站中展示的内容</p>
+<li><p>输入永久使用秘钥（如果不好使，请网上自行寻找）：</p>
+<p> 4A4RR-813DK-M81A9-4U35H-06KND</p>
+<p> NZ4RR-FTK5H-H81C1-Q30QH-1V2LA</p>
+<p> JU090-6039P-08409-8J0QH-2YR7F</p>
+<p> 4Y09U-AJK97-089Z0-A3054-83KLA</p>
+<p> 4C21U-2KK9Q-M8130-4V2QH-CF810</p>
+<p> MC60H-DWHD5-H80U9-6V85M-8280D</p>
 </li>
 </ol>
 </li>
-<li><p>一般情况下：</p>
+<li><p>新建虚拟主机</p>
+<ol>
+<li>文件-新建虚拟机<ul>
+<li>自定义-高级</li>
+<li>硬件兼容性-越高约好</li>
+<li>稍后安装光驱</li>
+<li>Linux-centOS7 64位</li>
+<li><font color=red>路径不要放C盘</font></li>
+<li>处理器1个7个内核（<font color=cyan>设备管理器</font>内<font color=red>确认自己配置</font>，选择几核）</li>
+<li>虚拟内存2-3G</li>
+<li>网络类型：使用网络地址转换</li>
+<li>I&#x2F;O与磁盘-推荐</li>
+<li>创建新的磁盘—100G</li>
+<li>磁盘文件放入虚拟机文件中</li>
+</ul>
+</li>
+<li>系统镜像下载：<ul>
+<li>官方下载站：</li>
+<li>新：<a target="_blank" rel="noopener" href="https://wiki.entos.org/Dowhload">https://wiki.entos.org/Dowhload</a></li>
+<li>旧：<a target="_blank" rel="noopener" href="https://vault.centos.org/">https://vault.centos.org</a></li>
+<li>其他镜像平台：</li>
+<li>网易镜像：<a target="_blank" rel="noopener" href="https://mirrors.163.com/">https://mirrors.163.com</a></li>
+<li>虚拟机-右键-设置-CD&#x2F;DVD-IOS镜像</li>
+</ul>
+</li>
+<li>进行分区操作<ul>
+<li>INSTALLATION DESTINATION(分区操作)</li>
+<li>L will configure partitoning(自我定义分区)</li>
+<li>·Done(完成)</li>
+<li>Standard Partion</li>
+<li>&#x2F;boot -200M</li>
+<li>Swap -2G</li>
+<li>“&#x2F;” -直接保存</li>
+<li>·Done(完成)</li>
+</ul>
+</li>
+<li>Accept changes(同意格式化磁盘)<ul>
+<li>NETWORK&amp;HOSTNAME(网络设置)</li>
+<li>Configure(配置)</li>
+<li>General(通用配置)</li>
+<li>Automatically connect to this network（让网卡自动激	活）</li>
+<li>Ipv4</li>
+<li>Manual</li>
+<li>Address 10.0.0.100</li>
+<li>Netmask 255.255.255.0</li>
+<li>Gatewayn 10.0.0.254</li>
+<li>DNS servers:223.5.5.5</li>
+<li>Save(保存)</li>
+<li>Host name(改变主机名)-app(保存)</li>
+<li>Dome(完成)</li>
+</ul>
+</li>
+<li>SOFFWARWE SELECTION(<font color=tan>预安装</font>)<ul>
+<li>除了Smart Card Support其余全选</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="系统网络配置（基础）"><a href="#系统网络配置（基础）" class="headerlink" title="系统网络配置（基础）"></a>系统网络配置（基础）</h2><h3 id="第一个里程碑：测试网络是否正常"><a href="#第一个里程碑：测试网络是否正常" class="headerlink" title="第一个里程碑：测试网络是否正常"></a>第一个里程碑：测试网络是否正常</h3><ul>
+<li>Ping.<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a>		&#x2F;&#x2F;尝试与百度通讯</li>
+<li>不成功的通讯</li>
+</ul>
+<h3 id="第二个里程碑：进行网络调试配置"><a href="#第二个里程碑：进行网络调试配置" class="headerlink" title="第二个里程碑：进行网络调试配置"></a>第二个里程碑：进行网络调试配置</h3><ol>
+<li>确认物理环境网络是否正常<ul>
+<li>Win+r	&#x2F;&#x2F;进入windows控制台1</li>
+<li>Cmd		&#x2F;&#x2F;进入windows控制台2  </li>
+<li>Ping  <a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a>		&#x2F;&#x2F;确认windows主机网络联通状态</li>
+</ul>
+</li>
+<li>虚拟软件网络是否配置正常<ul>
+<li>编辑-虚拟网络编辑器</li>
+<li>VMnet8(还原默认成“添加网络”)-开启</li>
+<li>NAT模式-开启</li>
+<li>将主机虚拟适配器连接到此网络</li>
+<li>子网IP：ip地址的前三位+.0 （如果你使用的是标准即10.0.0.0）</li>
+<li>子网掩码：255.255.255.0</li>
+<li>NAT模式设置：网关10.0.0.254</li>
+<li>网卡（虚拟）</li>
+<li>网络和Internet(控制面板)</li>
+<li>网络连接</li>
+<li>右键-属性-ipv4-属性</li>
+<li>使用下方IP地址(请先确认是标准)</li>
+<li>Ip:10.0.0.1</li>
+<li>子网掩码：255.255.255.0</li>
+<li>虚拟网络配置加载：</li>
+<li>右键主机-设置-网络适配器</li>
+<li>设备状态(<font color=tan>理应都可以勾选，如果不是，则操作有步骤存在问题</font>)：</li>
+<li>已连接√</li>
+<li>启动时连接√</li>
+<li>（ctrl+c可以中断ping任务）</li>
+</ul>
+<ol start="3">
+<li>如果上述检查单不好使，请：</li>
+</ol>
 <ul>
-<li>本条文章的评论区为互动区，可以进行一个打卡，互动与交流。而学术性文章下的评论区用于学术交流与评论（亦可以学习打卡）</li>
+<li>(请重新调整虚拟网络至—标准)</li>
+<li>命令：</li>
+<li>Nmtui -&gt;edit a connnec yion</li>
+<li>ens33-edit(编辑直至标准)</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>运维小知识：<ul>
+<li>系统配置后只有重启对应组件，才能启动对应服务</li>
+<li>-命令systrmctl restart network 重启网络</li>
 </ul>
 </li>
 </ul>
-<h5 id="每天都是新开始，睁眼才能看世界"><a href="#每天都是新开始，睁眼才能看世界" class="headerlink" title="每天都是新开始，睁眼才能看世界"></a>每天都是新开始，睁眼才能看世界</h5>
+<h3 id="第三个里程碑：安装远程工具软件-Xshell与EXTP（必须学习-或者序1习同类软件）"><a href="#第三个里程碑：安装远程工具软件-Xshell与EXTP（必须学习-或者序1习同类软件）" class="headerlink" title="第三个里程碑：安装远程工具软件-Xshell与EXTP（必须学习,或者序1习同类软件）"></a>第三个里程碑：安装远程工具软件-Xshell与EXTP（<font color=red>必须学习,或者序1习同类软件</font>）</h3><ul>
+<li><p>Xshell(含EXTP)免费版官网下载地址：<a target="_blank" rel="noopener" href="https://www.xshell.com/zh/free-for-home-school/">https://www.xshell.com/zh/free-for-home-school/</a></p>
+</li>
+<li><p>如官网打不开，可以从网盘下载:<br>  链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1NJGWZHkByakOkQpKfkc7Yg">https://pan.baidu.com/s/1NJGWZHkByakOkQpKfkc7Yg</a>?</p>
+<p>  提取码：r0ds</p>
+</li>
+<li><p>自行探索</p>
+</li>
+</ul>
+
                 
             </div>
             <hr/>
@@ -469,7 +644,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Port-3389.github.io/2024/10/16/Readme/">https://Port-3389.github.io/2024/10/16/Readme/</a>
+                    <a href="https://Port-3389.github.io/2024/10/23/%E4%BF%AE%E6%94%B9%E6%97%A5%E5%BF%97/LinuX%E7%AC%94%E8%AE%B0/2.LinuX%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">https://Port-3389.github.io/2024/10/23/%E4%BF%AE%E6%94%B9%E6%97%A5%E5%BF%97/LinuX%E7%AC%94%E8%AE%B0/2.LinuX%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -507,8 +682,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%89%8D%E8%A8%80/">
-                                    <span class="chip bg-color">前言</span>
+                                <a href="/tags/linux/">
+                                    <span class="chip bg-color">linux</span>
                                 </a>
                             
                         </div>
@@ -858,13 +1033,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/10/17/%E4%BF%AE%E6%94%B9%E6%97%A5%E5%BF%97/HCIA%E7%AC%94%E8%AE%B0/1.%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">
+                <a href="/2024/10/23/%E4%BF%AE%E6%94%B9%E6%97%A5%E5%BF%97/LinuX%E7%AC%94%E8%AE%B0/1.LinuX%E5%9F%BA%E7%A1%80/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="数据通信基础">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="LinuX基础">
                         
-                        <span class="card-title">数据通信基础</span>
+                        <span class="card-title">LinuX基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -875,19 +1050,27 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-10-17
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-10-23
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/HCIA%E6%95%99%E7%A8%8B/" class="post-category">
-                                    HCIA教程
+                            <a href="/categories/LinuX%E6%95%99%E7%A8%8B/" class="post-category">
+                                    LinuX教程
                                 </a>
                             
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -899,13 +1082,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/10/16/%E4%BF%AE%E6%94%B9%E6%97%A5%E5%BF%97/Readme/">
+                <a href="/2024/10/22/%E4%BF%AE%E6%94%B9%E6%97%A5%E5%BF%97/%E4%BF%AE%E6%94%B9%E6%97%A5%E5%BF%97/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="睁眼看世界">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="修改日志">
                         
-                        <span class="card-title">睁眼看世界</span>
+                        <span class="card-title">修改日志</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -916,23 +1099,19 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-10-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-10-22
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            port-3389
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E4%BF%AE%E6%94%B9%E8%AE%B0%E5%BD%95/" class="post-category">
+                                    修改记录
+                                </a>
+                            
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E5%89%8D%E8%A8%80/">
-                        <span class="chip bg-color">前言</span>
-                    </a>
-                    
                 </div>
                 
             </div>
