@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="1.数据通信基础, 梦的开始地">
-    <meta name="description" content="在数据通信之前
-从原理上，以及标准教程（参考为标准大学课程“计算机网络”）上说。数据通信是作为网络通讯的基础，但是在这里我们主要是以华为的数据通信为主，而在这里仅仅简单的做一个数据通信的基本讲解，这是为了让零基础读者更容易明白网络过程的基本">
+    <meta name="keywords" content="2.网络通信基础, 梦的开始地">
+    <meta name="description" content="在网络通讯之前
+网络通讯基础有很多考试和学习的渠道，最为有含金量的例如：sisco,华为等多种证书，其原理是同一原理，但是由于其独立性，可能存才命令等一些部分不太一样。这并不会影响到你的学习以及考证和就业。那么我们将从这里还是——华为数据通">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>1.数据通信基础 | 梦的开始地</title>
+    <title>2.网络通信基础 | 梦的开始地</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">1.数据通信基础</h1>
+                    <h1 class="description center-align post-title">2.网络通信基础</h1>
                 </div>
             </div>
         </div>
@@ -363,7 +363,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-10-17
+                    2024-10-18
                 </div>
                 
 
@@ -377,14 +377,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    3 分
                 </div>
                 
 
@@ -404,65 +404,139 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="在数据通信之前"><a href="#在数据通信之前" class="headerlink" title="在数据通信之前"></a>在数据通信之前</h1><ul>
-<li>从原理上，以及标准教程（参考为标准大学课程“计算机网络”）上说。数据通信是作为<font color=orange>网络通讯的基础</font>，但是在这里我们主要是以<font color=cyan>华为的数据通信</font>为主，而在这里仅仅简单的做一个数据通信的基本讲解，这是为了让零基础读者更容易明白网络过程的基本原理，而为什么不进行深入的讲解呢？一方面，该理论体系的深层知识对数据通信基础HCIA帮助不大（如果后续推进HCIP教程，则一定会进行更新，也意味着<font color=tan>或许会有新的分支</font>）。所以，建议零基础小白，先行阅读该篇文章。</li>
+                <h1 id="在网络通讯之前"><a href="#在网络通讯之前" class="headerlink" title="在网络通讯之前"></a>在网络通讯之前</h1><ul>
+<li>网络通讯基础有<font color=orange>很多考试和学习的渠道</font>，最为有含金量的例如：sisco,华为等多种证书，其原理是同一原理，但是由于其独立性，可能存才命令等一些部分不太一样。这并不会影响到你的学习以及考证和就业。那么我们将从这里还是——华为数据通信HCIA，以下就是正文部分。</li>
 </ul>
-<h1 id="数据与信号"><a href="#数据与信号" class="headerlink" title="数据与信号"></a>数据与信号</h1><h2 id="1-模拟数据与数字数据"><a href="#1-模拟数据与数字数据" class="headerlink" title="1.模拟数据与数字数据"></a>1.模拟数据与数字数据</h2><ul>
-<li><p>通信的目的是为了<font color=cyan>交换信息</font>，数据是信息的载体，信息涉及数据所表示的内涵。数据是信息的具体表现形式。</p>
+<h2 id="Contents："><a href="#Contents：" class="headerlink" title="Contents："></a>Contents：</h2><ol>
+<li><p>通信与网络</p>
 </li>
-<li><p>模拟数据:是一段连续变化的数值，是一条曲线<br>  数字数据：是离散的，有有限个数的，是一条折线</p>
+<li><p>网络类型与网络拓扑</p>
 </li>
-</ul>
-<h2 id="2-模拟信号与数字信号"><a href="#2-模拟信号与数字信号" class="headerlink" title="2.模拟信号与数字信号"></a>2.模拟信号与数字信号</h2><ul>
-<li><p>模拟信号：是一种随时间推移而平稳变化的连续波形式。</p>
+<li><p>网络工程与网络工程师</p>
 </li>
-<li><p>数字信号：是一种脉冲式波形</p>
+</ol>
+<h2 id="网络通讯基本概念："><a href="#网络通讯基本概念：" class="headerlink" title="网络通讯基本概念："></a>网络通讯基本概念：</h2><ul>
+<li><p>通信：就是两者之间 通过介质 实现的信息交流</p>
 </li>
-<li><p>用数字信号形式来表示数字或模拟信号称为<font color=red>编码</font>。用模拟信号来表示数字或模拟数据称为<font color=red>调制</font>。</p>
+<li><p>网络通讯：是指终端设备之间通过计算机网络进行通讯</p>
+<ol>
+<li><p>两台计算机之间通过!网线通讯</p>
 </li>
-</ul>
-<h2 id="3-比特和码元"><a href="#3-比特和码元" class="headerlink" title="3.比特和码元"></a>3.比特和码元</h2><ul>
-<li><p>比特和码元是完全不同的两个概念。</p>
+<li><p>多台计算机通过路由器传递文件</p>
 </li>
-<li><p>比特：是二进制数据的<font color=cyan>最小单位</font>。</p>
+<li><p>计算机通过internet下载文件</p>
 </li>
-<li><p>码元：是表示数据的基本信号波形。</p>
+</ol>
 </li>
-<li><p>一个码元就是一个完整，独立，固定时长的<font color=cyan>信号波长</font>，该时长也称为码元宽度。码元的状态个数称为码元编码级数。</p>
+<li><p>网关：接收并处理本地网段终端的数据，转发至目标网络的设备 称为网关</p>
 </li>
-</ul>
-<h2 id="4-周期信号和非周期信号"><a href="#4-周期信号和非周期信号" class="headerlink" title="4.周期信号和非周期信号"></a>4.周期信号和非周期信号</h2><ul>
-<li><p>如果一个信号在可测定的时间内，以相同的时间间隔不断重复一个固定模式，则称其为<font color=tan>周期信号</font>，一个固定模式持续的时间间隔称为基波信号周期，一般用T来表示</p>
-</li>
-<li><p>如果一个信号在随时间不断变化的过程中，没有固定的模式和波形循环出现，则称其为非周期信号。例如，语言的音波信号就是典型的非周期信号。</p>
+<li><p>终端设备：数据的产生者 和 接收者（一般是电脑，手机，服务器等）</p>
 </li>
 </ul>
-<h2 id="5-信号分析工具"><a href="#5-信号分析工具" class="headerlink" title="5.信号分析工具"></a>5.信号分析工具</h2><ul>
-<li>在数据通信中，观察和分析电信号的基本方法有时域分析和频域分析。时域分析是以时间为自变量，用示波器观察，测量电信号随时间变化的情况。频域分析是以频率为自变量，通过傅里叶分析，用频谱仪观察，测量信号的频谱组成，振幅与相位，分析电信号通过信通后频率分量的变化。信号频域分析的重要理论是傅里叶级数（也称傅里叶分析）[<font color=tan>这对新手而言并不重要</font>]</li>
-</ul>
-<h2 id="6-模拟信号的三要素"><a href="#6-模拟信号的三要素" class="headerlink" title="6.模拟信号的三要素"></a>6.模拟信号的三要素</h2><ul>
-<li><p>模拟信号的课分为简单模拟信号和复合模拟信号。简单模拟信号不能再分解。</p>
+<h2 id="信息传递的过程"><a href="#信息传递的过程" class="headerlink" title="信息传递的过程:"></a>信息传递的过程:</h2><ul>
+<li><p>快递：物品-&gt;包裹-&gt;集散中心-&gt;天空-&gt;集散中心-&gt;包裹-&gt;物品</p>
 </li>
-<li><p>一般的，A表示振幅，反映了信号的强弱，T是信号周期，φ是相位，反映了波形的相对于时间轴零点的位置。这就是模拟信号的三要素。</p>
+<li><p>网络：数据-&gt;网关路由器-&gt;Internet-&gt;网关路由器-&gt;数据<br>  (这种说法我个人在初学时是觉得非常简陋的描述，可能后续还会补充)</p>
 </li>
 </ul>
-<h1 id="信道"><a href="#信道" class="headerlink" title="信道"></a>信道</h1><h2 id="1-模拟信号和数字信号"><a href="#1-模拟信号和数字信号" class="headerlink" title="1.模拟信号和数字信号"></a>1.模拟信号和数字信号</h2><ul>
-<li><p>按照传输的信号类型，信道分为模拟信道和数字信道。使用模拟信号传输数据的信道称为<font color=orange>模拟信道</font>，使用数字信号传输数据的信道称为<font color=orange>数字信道</font>。通常数字信道有更高的传输质量，数字信道传输的数字信号一般编码为高&#x2F;低电平、脉冲上升、下降沿有&#x2F;无光脉冲等两种状态，<font color=cyan>因而具有相当大的容错范围</font>，即使在传输中有一定的信号的畸变，也不会影响正确性。</p>
+<h2 id="常见的术语："><a href="#常见的术语：" class="headerlink" title="常见的术语："></a>常见的术语：</h2><ul>
+<li><p>数据载荷（data）：最终想要传递的信息</p>
 </li>
-<li><p>究竟应当使用模拟信号还是数字信号，是由信道传输介质的性质决定的。比如无线信道和电话信道只适合于传输<font color=cyan>模拟信号</font>。</p>
+<li><p>报文：网络中交换与传输的数据单元</p>
+</li>
+<li><p>头部：在数据载荷的前面添加的信息段</p>
+</li>
+<li><p>尾部：在数据载荷的后面添加的信息段</p>
+</li>
+<li><p>封装：对数据载荷添加头部和尾部，形成新的报文的过程</p>
+</li>
+<li><p>解封装：去掉报文的头部和尾部，获取数据载荷的过程</p>
+</li>
+<li><p>网关：提供协议转换，路由选择，数据交换等功能的网络设备</p>
+</li>
+<li><p>路由器：为报文选择传递路径的网络设备</p>
+</li>
+<li><p>终端设备：数据通信的端设备，作为数据的发送者或接收者</p>
 </li>
 </ul>
-<h2 id="2-信道的最大容量"><a href="#2-信道的最大容量" class="headerlink" title="2.信道的最大容量"></a>2.信道的最大容量</h2><ul>
-<li>信道传输数据的能力受限于信道带宽、信号的衰弱、变形和失真等因素。奈奎斯特定律和香农公式分别给出了理想情况下和非理想状况下信通的极限传输能力，成为信道的最大容量，用信道的最大数据传输速率来表示。</li>
+<h2 id="数据通信网络基本概念"><a href="#数据通信网络基本概念" class="headerlink" title="数据通信网络基本概念"></a>数据通信网络基本概念</h2><h2 id="数据通信网络："><a href="#数据通信网络：" class="headerlink" title="数据通信网络："></a>数据通信网络：</h2><ul>
+<li>由服务器，交换机，防火墙，无线控制器，无线接入点，以及个人电脑，网络打印机，服务器等设备构成的通信网络。</li>
 </ul>
-<h1 id="传输方式"><a href="#传输方式" class="headerlink" title="传输方式"></a>传输方式</h1><h2 id="1-基带传输"><a href="#1-基带传输" class="headerlink" title="1.基带传输"></a>1.基带传输</h2><ul>
-<li>由信源发出的未经过调制的原始电信号所固有的频带，称为<font color=cyan>基本频带</font>，简称基带。其频谱包括：直流，低频和高频等多种成分。可分为数字基带信号与模拟基带信号。由其信源决定。</li>
+<h2 id="功能："><a href="#功能：" class="headerlink" title="功能："></a>功能：</h2><ul>
+<li>数据通信网络最基本的功能是实现数据互通</li>
 </ul>
-<h2 id="2-频带传输"><a href="#2-频带传输" class="headerlink" title="2.频带传输"></a>2.频带传输</h2><ul>
-<li>在<font color=cyan>远距离通讯中</font>，通信的信道多为模拟信道，不适合直接传输频带很宽、但能量集中在低频段的数字信号。因此，计算机网络的远距离通讯通常采用频带传输。所谓频带传输是指将基带信号调制成适合的模拟信道中传输的、具有较高频率范围的模拟信号称为频带信号，再将这种频带信号在模拟信号中传输。</li>
+<h1 id="·网络设备"><a href="#·网络设备" class="headerlink" title="·网络设备"></a>·网络设备</h1><h2 id="1-交换机：数据交换，资源共享"><a href="#1-交换机：数据交换，资源共享" class="headerlink" title="1.交换机：数据交换，资源共享"></a>1.交换机：数据交换，资源共享</h2><ul>
+<li><p>什么是网络？ &#x3D;&gt;实现网络设备之间数据信息的传递</p>
+</li>
+<li><p>什么是交换？ &#x3D;&gt;交互替换</p>
+</li>
 </ul>
-<h2 id="3-宽带传输"><a href="#3-宽带传输" class="headerlink" title="3.宽带传输"></a>3.宽带传输</h2><ul>
-<li>宽带信号是将基带信号进行调制后形成的<font color=cyan>频分复用模拟信号</font>。在宽带传输过程中，各路基带信号经过调制后，其频谱被移到不同的频段，从而形成多个<font color=tan>子信道</font>，每个子信道可以同时传输不同的信号。因此，宽带传输能在一条电缆中可以同时传送多路数字信号，从而提高通信线路利用率。</li>
+<ol>
+<li><p>二层交换机:</p>
+<ol>
+<li><p>用于连接大量的终端设备</p>
+</li>
+<li><p>实现数据同网段的转发</p>
+</li>
+<li><p>分割了冲突域</p>
+<ul>
+<li><p>*什么是冲突域？&#x3D;&gt;A给B发送信息时，B也给A发送信息（电信号发生了冲突碰撞）</p>
+</li>
+<li><p>一般存在于共享式的网络连接上</p>
+</li>
+</ul>
+<p> <strong>冲突域不可避免</strong></p>
+<ul>
+<li><p>为了减少冲突域的问题：</p>
+<ol>
+<li>先听后发</li>
+<li>边听边发</li>
+<li>冲突停发</li>
+<li>随机时间重发</li>
+</ol>
+</li>
+<li><p>解决：<br> 交换机的每一个接口都是一个冲突域<br> 交换机的每一个接口都只连接一台终端</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>三层交换机</p>
+<ol>
+<li>用于连接大量的终端设备</li>
+<li>实现数据同网段的转发</li>
+<li>分割了冲突域，广播域</li>
+<li>具备了部分的路由器功能</li>
+</ol>
+</li>
+</ol>
+<h2 id="2-路由器："><a href="#2-路由器：" class="headerlink" title="2.路由器："></a>2.路由器：</h2><ul>
+<li><p>什么是路由？ &#x3D;&gt;路径由来</p>
+</li>
+<li><p>路由器：</p>
+<ol>
+<li><p>实现数据跨网段的转发</p>
+</li>
+<li><p>广域接入，地址转换</p>
+</li>
+<li><p>隔离了冲突域，广播域</p>
+<ul>
+<li><p>广播域：一个广播报文能够到达的最大范围</p>
+</li>
+<li><p>广播：一对所有</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h2><ul>
+<li><p>通信：就是两者之间 通过介质 实现的信息交流</p>
+</li>
+<li><p>网关：接收并处理本地网段终端的数据，转发至目标网络的设备 称为网关</p>
+</li>
+<li><p>终端设备：数据的产生者 和 接收者（一般是电脑，手机，服务器等）</p>
+</li>
 </ul>
 
                 
@@ -490,7 +564,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Port-3389.github.io/2024/10/17/HCIA%E7%AC%94%E8%AE%B0/1.%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">https://Port-3389.github.io/2024/10/17/HCIA%E7%AC%94%E8%AE%B0/1.%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/</a>
+                    <a href="https://Port-3389.github.io/2024/10/18/HCIA%E6%95%99%E7%A8%8B/2.%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">https://Port-3389.github.io/2024/10/18/HCIA%E6%95%99%E7%A8%8B/2.%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -875,13 +949,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/10/18/HCIA%E7%AC%94%E8%AE%B0/2.%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80/">
+                <a href="/2024/10/21/Markdown%E7%AC%94%E8%AE%B0/Markdown%E8%AF%AD%E6%B3%95/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="2.网络通信基础">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Markdown语法入门">
                         
-                        <span class="card-title">2.网络通信基础</span>
+                        <span class="card-title">Markdown语法入门</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -892,14 +966,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-10-18
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-10-21
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/HCIA%E6%95%99%E7%A8%8B/" class="post-category">
-                                    HCIA教程
+                            <a href="/categories/Markdown%E6%95%99%E7%A8%8B/" class="post-category">
+                                    Markdown教程
                                 </a>
                             
                             
@@ -916,13 +990,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/10/16/Readme/">
+                <a href="/2024/10/17/HCIA%E6%95%99%E7%A8%8B/1.%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="睁眼看世界">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="1.数据通信基础">
                         
-                        <span class="card-title">睁眼看世界</span>
+                        <span class="card-title">1.数据通信基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -933,23 +1007,19 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-10-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-10-17
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            port-3389
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/HCIA%E6%95%99%E7%A8%8B/" class="post-category">
+                                    HCIA教程
+                                </a>
+                            
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E5%89%8D%E8%A8%80/">
-                        <span class="chip bg-color">前言</span>
-                    </a>
-                    
                 </div>
                 
             </div>
