@@ -370,7 +370,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-10-23
+                    2024-10-28
                 </div>
                 
 
@@ -440,7 +440,9 @@
 </li>
 <li><p>标题</p>
 <p>  标题是Markdown中最常用的语法之一，标题的划分也给用户有更优质的可读性，通常情况下，标题分为六个等级，即：</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">...</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p># 一级标题<br>   ## 二级标题<br>   ### 三级标题<br>   …<br>   ###### 六级标题</p>
+</blockquote>
 </li>
 <li><p>序号</p>
 <p>  假设一个段落分为大致四点，有1.2.3.4.之分。那么我们就需要用序号给其分开，以便读者更好的阅读，序号可以理解为段落也可以理解为是一个段落中的区域划分。<font color=cyan>请注意，这样做是有必要的</font>。操作方法为：</p>
@@ -490,13 +492,17 @@
 </tr>
 </tbody></table>
 <p>  它的源码就是这样的：</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|姓名|年龄|性别|成绩|</span><br><span class="line">|:-:|:-:|:-:|:-:|</span><br><span class="line">|3389|20|男|100|</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>|姓名|年龄|性别|成绩|<br>   |:-:|:-:|:-:|:-:|<br>   |3389|20|男|100|</p>
+</blockquote>
 <p>  这里我引用一句我师父的话叫做：“当然你要是有强迫症或者是处女座的话也可以强制对齐”</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|  姓名 |  年龄|  性别 |  成绩 |</span><br><span class="line">|:----:|:----:|:----:|:-----:|</span><br><span class="line">| 3389 |  20  |  man |  100  |</span><br></pre></td></tr></table></figure>
-
+<blockquote>
+<p>|  姓名 |  年龄|  性别 |  成绩 |<br>   |:—-:|:—-:|:—-:|:—–:|<br>   | 3389 |  20  |  man |  100  |</p>
+</blockquote>
 <p>  可以发现第二行很奇怪 &#x3D;&gt; 调换位置，并且加上针顶</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|||||</span><br><span class="line">|:-:|:-:|:-:|:-:|</span><br><span class="line">|姓名|年龄|性别|成绩|</span><br><span class="line">|3389|20|男|100|</span><br></pre></td></tr></table></figure>
-
+<blockquote>
+<p>|||||<br>  |:-:|:-:|:-:|:-:|<br>  |姓名|年龄|性别|成绩|<br>  |3389|20|男|100|</p>
+</blockquote>
 <p>  效果如下：</p>
 <table>
 <thead>
@@ -532,11 +538,15 @@
 <p>  如果目标是图片的话，在[]前加上一个 ！ 则可以预览图片</p>
 </li>
 <li><p>代码块</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[三个顿号]语言类型</span><br><span class="line">语句1</span><br><span class="line">语句2</span><br><span class="line">...</span><br><span class="line">[三个顿号]</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>`&#96;&#96;语言类型<br>    语句1<br>    语句2<br>   ...<br>   `&#96;&#96;</p>
+</blockquote>
 </li>
 <li><p>颜色</p>
 <p>  对于重点内容，<font color=cyan>颜色</font>是非常重要的，那么是怎么实现的呢？如下：</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;font color=[颜色值]&gt;文本&lt;/font&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>&lt;font color&#x3D;[颜色值]&gt;文本</font></p>
+</blockquote>
 </li>
 <li><p>除此之外<br>  除此之外，Markdown还有一些其他的使用方式和快捷方式，使用频率因人而异，比如：<em><strong>折叠区，高亮区，删除线，等等。</strong></em>这些期待你在使用时，继续探索！</p>
 </li>
@@ -993,7 +1003,7 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/10/18/HCIA%E6%95%99%E7%A8%8B/2.%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">
+                <a href="/2024/10/18/HCIA%E7%AC%94%E8%AE%B0/2.%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">
                     <div class="card-image">
                         
                         
@@ -1023,6 +1033,14 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/HCIA/">
+                        <span class="chip bg-color">HCIA</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1252,7 +1270,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">6.4k</span>
+                        class="white-color">8.5k</span>
             
             
             
